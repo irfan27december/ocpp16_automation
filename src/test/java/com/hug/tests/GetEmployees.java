@@ -54,7 +54,7 @@ public class GetEmployees {
 		//System.out.println(" Test   "+property.getPropertyValue("baseURI")+property.getPropertyValue("employeesResource"));
 		response = RESTCalls.GETRequest(property.getPropertyValue("baseURI"), property.getPropertyValue("employeesResource"));
 		//System.out.println("Complete response :" + response.asString());
-		Assert.assertEquals(response.getStatusCode(), Integer.parseInt(property.getPropertyValue("statusCode2001")));
+		Assert.assertEquals(response.getStatusCode(), Integer.parseInt(property.getPropertyValue("statusCode200")));
 	}
 	
 }

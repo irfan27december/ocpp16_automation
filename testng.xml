@@ -2,11 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite" parallel="methods" thread-count="5">
 
-<parameter name="firstName"  value="Mohammed"/>
+	<parameter name="firstName" value="Mohammed" />
 
 	<listeners>
 		<listener class-name="com.hug.listeners.TestListener" />
 	</listeners>
+
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="driverPath" value="C:\\Selenium\\drivers\\chromedriver.exe"></parameter>
 
 
 	<test name="Regression Tests">
@@ -27,6 +30,9 @@
 
 			<!-- <class name="com.hug.tests.GetEmployees" /> -->
 			<!-- <class name="com.hug.sample.SampleTest" /> -->
+
+			<!-- <class name="com.hug.tests.HomePageTest" /> -->
+			<class name="com.hug.tests.LoginPageTest" />
 
 		</classes>
 	</test> <!-- Test -->
