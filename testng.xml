@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" parallel="methods" thread-count="5">
+
+<parameter name="firstName"  value="Mohammed"/>
+
+	<listeners>
+		<listener class-name="com.hug.listeners.TestListener" />
+	</listeners>
+
+
+	<test name="Regression Tests">
+		<classes>
+
+			<class name="com.hug.tests.GetEmployees">
+				<methods>
+					<include name="getSingleEmployeeDetails" />
+					<include name="getAllEmployeeDetails" />
+				</methods>
+			</class>
+
+			<class name="com.hug.sample.SampleTest">
+				<methods>
+					<exclude name="testMethod" />
+				</methods>
+			</class>
+
+			<!-- <class name="com.hug.tests.GetEmployees" /> -->
+			<!-- <class name="com.hug.sample.SampleTest" /> -->
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
