@@ -46,17 +46,29 @@ public class RunOnBrowserStack {
 
 
 		//Generate below code for capabilities from https://www.browserstack.com/automate/capabilities
+		
+		//View results at https://automate.browserstack.com/dashboard/v2/builds/fdf55647c65b4d068629dbcfb68f0ec72b02de16
 		DesiredCapabilities caps = new DesiredCapabilities();
 
-		caps.setCapability("browser", "Chrome");
+		caps.setCapability("browser", "Safari");
 
-		caps.setCapability("browser_version", "78.0");
+		caps.setCapability("browser_version", "12.0");
 
-		caps.setCapability("os", "Windows");
+		caps.setCapability("os", "OS X");
 
-		caps.setCapability("os_version", "8.1");
+		caps.setCapability("os_version", "Mojave");
 
 		caps.setCapability("browserstack.debug", "true");
+		
+		caps.setCapability("browserstack.console","errors");
+		
+		//Execution on mobile
+		/*DesiredCapabilities caps = new DesiredCapabilities();
+		caps.setCapability("os_version", "7.0");
+		caps.setCapability("device", "Samsung Galaxy S8");
+		caps.setCapability("real_mobile", "true");
+		caps.setCapability("browserstack.local", "false");*/
+
 
 
 
@@ -127,7 +139,7 @@ public class RunOnBrowserStack {
 
 			msg="PASS";
 
-			System.out.println(msg);
+			System.out.println(element+"  "+ msg);
 
 		} catch (Exception e) {
 

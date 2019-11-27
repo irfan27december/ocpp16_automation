@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hug.tests.GetEmployees">
+      <class name="arraylist.Compare2ArrayLists">
         <methods>
-          <include name="getAllEmployeeDetails"/>
+          <include name="compare2ArrayListMethod"/>
         </methods>
-      </class> <!-- com.hug.tests.GetEmployees -->
+      </class> <!-- arraylist.Compare2ArrayLists -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
