@@ -14,7 +14,8 @@ public class StringConstants {
     public static final String SSLENABLE = "sslEnable";
     public static final String USER_NAME = "username";
     public static final String PASSWORD = "password";
-   
+    public static final String ADMIN = "admin";
+    
     public static final String ENGLISH = "English";
     public static final String FRENCH = "French";
     public static final String GERMAN = "German";

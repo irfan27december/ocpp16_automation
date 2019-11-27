@@ -3,7 +3,7 @@ import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.EmailAttachment;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.MultiPartEmail;
-import static com.ca.tools.docops.utils.StringConstants.*;
+import static com.hug.utilities.StringConstants.*;
 
 import java.io.BufferedReader;
 import java.io.File;
