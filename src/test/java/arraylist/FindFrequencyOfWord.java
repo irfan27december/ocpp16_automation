@@ -11,10 +11,13 @@ public class FindFrequencyOfWord {
 
 	public static void findFrequencyOfWordsInArray(){
 		String[] arrays = {"Tom","Joe","Ty","Bob","Fred","Kevin","Bob"};
+		
 		//Converting array to ArrayList Using Arrays.asList() method
 		List<String> list2 = new ArrayList<String>(Arrays.asList(arrays));
+		
 		/*int count2 = Collections.frequency(list2,"Bob");
 		System.out.println("Frequency is "+count2);*/
+		
 		Set<String> set2 = new HashSet<String>(list2); 
 		//Set<String> set3 = new LinkedHashSet<String>(list); 
 		for (String string : set2) 
@@ -28,15 +31,23 @@ public class FindFrequencyOfWord {
 		// creating Arrays of String type
 		String str = "A C A D A A A A A A A A A A A A B A ";
 		String[] strToArray = str.split(" ");
+		
 		// getting the list view of Array
 		List<String> list3 = new ArrayList<String>(Arrays.asList(strToArray));
+		
 		// printing the list
 		System.out.println("The list is:" + list3);
+		
 		/*int count3 = Collections.frequency(list3,"A");
 		System.out.println("Frequency is "+count3);*/
+		
 		Set<String> set3 = new HashSet<String>(list3); 
 		//Set<String> set3 = new LinkedHashSet<String>(list); 
 		for (String string : set3) 
+			 
+			/*Collections class contains static utility methods that either accepts or returns the collection. 
+			 The collection class provides many useful methods for shuffling, reversing, sorting and searching collection objects.
+			*/ 
 			System.out.println("Frequency of "+string + ": " + Collections.frequency(list3, string)); 
 
 	}
