@@ -15,60 +15,64 @@ public class ArrayListExample {
 		/* Creating ArrayList of type "String" which means
 		 * we can only add "String" elements
 		 */
-		ArrayList<String> obj = new ArrayList<String>();
+		ArrayList<String> list = new ArrayList<String>();
 
 		/*This is how we add elements to an ArrayList*/
-		obj.add("Imran");
-		obj.add("Irfan");
-		obj.add("Idrees");
-		obj.add("Mustafa");
-		obj.add("Hammad");
-		obj.add("Irfan");
+		list.add("Imran");
+		list.add("Irfan");
+		list.add("Idrees");
+		list.add("Mustafa");
+		list.add("Hammad");
+		list.add("Irfan");
+		list.add("Irfan");
+		list.add("Irfan");
+		list.add("Irfan");
+		
 
 		// Displaying elements
 		System.out.println("Original ArrayList:");
-		for(String str:obj)
+		for(String str:list)
 			System.out.println(str);
 
 		/* Add element at the given index
-		 * obj.add(0, "Rahul") - Adding element "Rahul" at first position
-		 * obj.add(1, "Justin") - Adding element "Justin" at second position
+		 * list.add(0, "Rahul") - Adding element "Rahul" at first position
+		 * list.add(1, "Justin") - Adding element "Justin" at second position
 		 */
-		obj.add(0, "Saqib");
-		obj.add(1, "Maria");
+		list.add(0, "Saqib");
+		list.add(1, "Maria");
 
 		// Displaying elements
 		System.out.println("ArrayList after add operation:");
-		for(String str:obj)
+		for(String str:list)
 			System.out.println(str);
 
 		//Remove elements from ArrayList like this
-		obj.remove("Chaitanya"); //Removes "Chaitanya" from ArrayList
-		obj.remove("Harry"); //Removes "Harry" from ArrayList
+		list.remove("Chaitanya"); //Removes "Chaitanya" from ArrayList
+		list.remove("Harry"); //Removes "Harry" from ArrayList
 
 		// Displaying elements
 		System.out.println("ArrayList after remove operation:");
-		for(String str:obj)
+		for(String str:list)
 			System.out.println(str);
 
 		//Remove element from the specified index
-		obj.remove(1); //Removes Second element from the List
+		list.remove(1); //Removes Second element from the List
 
 		// Displaying elements
 		System.out.println("Final ArrayList:");
-		for(String str:obj)
+		for(String str:list)
 			System.out.println(str);
 		/*int count = 0;
-		for(String str:obj){
+		for(String str:list){
 			//System.out.println(str);
 			if(str.equals("Irfan")){
 				count++;
-				System.out.println(" Present "+obj.contains("Irfan"));
+				System.out.println(" Present "+list.contains("Irfan"));
 			}
 		}
 		System.out.println("Count is "+count);
 		*/
-		int count = Collections.frequency(obj,"Irfan");
+		int count = Collections.frequency(list,"Irfan");
 		System.out.println("Frequency is "+count);
 	}
 }
