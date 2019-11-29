@@ -3,7 +3,7 @@ package arraylist;
 import java.util.ArrayList;
 import java.util.HashSet;
  
-public class ArrayListGetUniqueValuesExample {
+public class GetUniqueValuesExample {
  
     public static void main(String[] args) {
         
